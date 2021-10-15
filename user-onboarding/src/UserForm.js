@@ -23,7 +23,7 @@ export default function UserForm(props) {
         <form className='form container' onSubmit={onSubmit}>
             <div className='form-group submit'>
             <h2>User onBoard</h2>
-            <button disabled={disabled}>submit</button>
+            <button id="submitBtn" disabled={disabled}>submit</button>
 
             <div className='errors'>
                 <div>{errors.first_name}</div>
@@ -57,7 +57,7 @@ export default function UserForm(props) {
                     value={values.email}
                     onChange={onChange}
                     name='email'
-                    type='text'
+                    type='email'
                 />
             </label><br/>
             <label>Password
